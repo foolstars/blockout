@@ -1,0 +1,8 @@
+<!--components/thread/thread.wxml-->
+<view class="thread">
+  <view class="thread-framework">
+    <view wx:if="{{avatar===''}}" class="default-avatar">
+      <image src="/miniprogram/icons/default_avatar.png"></image>
+    </view>
+  </view>
+</view>

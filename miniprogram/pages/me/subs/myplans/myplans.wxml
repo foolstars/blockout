@@ -1,0 +1,10 @@
+<!--pages/me/subs/myplans.wxml-->
+<view class="me-myplans-wrapper">
+  <view class="thread" wx:for="{{threads}}" wx:key="*this">
+    <menu-item icon-type="icon2" item="{{item}}"></menu-item>
+    <button class="deleteplans" id="{{item.pid}}" bindtap="deleteplan" style="position:absolute;margin-left:620rpx;margin-top:-85rpx;height:75rpx;width:50rpx;background-color:cornsilk;font-size:20rpx;white-space:nowrap;justify-content:center;display:flex;vertical-align:middle;align-self:center;">
+      <text style="position:absolute;margin-top:8rpx;">删除方案</text>
+    </button>
+  </view>
+  <button bindtap="createthread" style="z-index:10;position:fixed;right:60rpx;bottom:60rpx;width:120rpx;height:120rpx;white-space:nowrap;font-size:30rpx;align-items:center;justify-content:center;display:flex;border-radius:60rpx 60rpx 60rpx 60rpx;">发布方案</button>
+</view>

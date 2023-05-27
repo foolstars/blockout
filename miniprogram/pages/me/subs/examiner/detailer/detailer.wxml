@@ -1,0 +1,15 @@
+<!--pages/nearby/subs/detail/detail.wxml-->
+<view class="detail-wrapper">
+  <view class="thread">{{title.ptheme}}</view>
+  <view class="detail" wx:for="{{contents}}" wx:key="*this">
+    <view class>
+      <view class="thread">
+        <view class="profile" style="font-size:20rpx;">uid：{{item.uid}}</view>
+        <view class="content">{{item.contents}}</view>
+        <image wx:if="{{!(item.photos===null)}}" style="background-color:white;position:relative;width:200rpx;height:200rpx;margin-left:110rpx;margin-top:5rpx" mode="aspectFill" src="{{item.photos}}"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<button bindtap="approve" style="z-index:10;position:fixed;right:60rpx;bottom:60rpx;width:120rpx;height:120rpx;white-space:nowrap;font-size:30rpx;align-items:center;justify-content:center;display:flex;border-radius:60rpx 60rpx 60rpx 60rpx;">通过</button>
+<button bindtap="disapprove" style="z-index:10;position:fixed;left:60rpx;bottom:60rpx;width:120rpx;height:120rpx;white-space:nowrap;font-size:30rpx;align-items:center;justify-content:center;display:flex;border-radius:60rpx 60rpx 60rpx 60rpx;">拒绝</button>

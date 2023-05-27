@@ -1,0 +1,72 @@
+{
+  "entryPagePath": "pages/homepage/homepage",
+  "pages": [
+    "pages/messages/messages",
+    "pages/messages/subs/atme/atme",
+    "pages/messages/subs/likeme/likeme",
+    "pages/messages/subs/replyme/replyme",
+    "pages/messages/subs/notification/notification",
+    "pages/messages/subs/detail/detail",
+    "pages/nearby/nearby",
+    "pages/homepage/homepage",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/me/me",
+    "pages/me/subs/myplans/myplans",
+    "pages/me/subs/profileupdate/profileupdate",
+    "pages/me/subs/myfavourite/myfavourite",
+    "pages/nearby/subs/detail/detail",
+    "pages/me/subs/login/login",
+    "pages/me/subs/register/register",
+    "pages/me/subs/detail/detail",
+    "pages/homepage/subs/detail/detail",
+    "pages/me/subs/sender/sender",
+    "pages/me/subs/examiner/examiner",
+    "pages/me/subs/examiner/detailer/detailer",
+    "pages/homepage/subs/detail/sender",
+    "pages/me/subs/detail/sender",
+    "pages/nearby/subs/detail/sender",
+    "pages/homepage/subs/antiscan/antiscan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "BlockoutProject",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/homepage/homepage",
+        "iconPath": "icons/新建文件夹 (4)/9.png",
+        "selectedIconPath": "icons/新建文件夹 (4)/10.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/nearby/nearby",
+        "iconPath": "icons/新建文件夹 (4)/11.png",
+        "selectedIconPath": "icons/新建文件夹 (4)/12.png",
+        "text": "附近"
+      },
+      {
+        "pagePath": "pages/messages/messages",
+        "iconPath": "icons/新建文件夹 (4)/13.png",
+        "selectedIconPath": "icons/新建文件夹 (4)/14.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "icons/新建文件夹 (4)/15.png",
+        "selectedIconPath": "icons/新建文件夹 (4)/16.png",
+        "text": "我"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于分享方案位置"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

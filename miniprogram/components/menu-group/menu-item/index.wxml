@@ -1,0 +1,19 @@
+<!--components/menu-item/index.wxml-->
+<view class="menu-item">
+  <view wx:if="{{item.Txt}}" class="icon txt {{iconType}}">
+    <text>{{item.Txt}}</text>
+  </view>
+  <image wx:else class="icon {{iconType}}" src="{{item.icon}}" mode="widthFix"></image>
+  <view class="content">
+    <block wx:if="{{item.txt}}">
+    <navigator url="{{item.Topage}}" open-type='navigateTo'>{{item.txt}}</navigator>
+    </block>
+    <block wx:else>
+    <navigator url="{{item.content.Topage}}" open-type='navigateTo' style="overflow-x:hidden;white-space:nowrap;">{{item.content.Name}}</navigator>
+      <text class="detail" style="overflow-x:hidden;white-space:nowrap;">{{item.content.Msg}}</text>
+    </block>
+  </view>
+  <view wx:if="{{item.Rtxt}}" class="end-icon">{{item.Rtxt}}</view>
+  <view wx:else class="right-icon {{Ricon}}">{{item.Rtxt}}</view>
+            <view class="divLine"></view>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/nearby/subs/detail/detail.wxml-->
+<view class="thread" wx:for="{{threads}}" wx:key="*this">
+  <menu-item icon-type="icon2" item="{{item}}"></menu-item>
+</view>
+<button bindtap="refresh" style="z-index:10;position:fixed;right:60rpx;bottom:60rpx;width:120rpx;height:120rpx;white-space:nowrap;font-size:30rpx;align-items:center;justify-content:center;display:flex;border-radius:60rpx 60rpx 60rpx 60rpx;">刷新</button>

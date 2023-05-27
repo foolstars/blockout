@@ -1,0 +1,12 @@
+<!--pages/messages/subs/detail/detail.wxml-->
+
+<text decode="{{true}}" space="{undefined{true}}">
+  &nbsp;&nbsp;&nbsp;&nbsp;张三：
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hello world
+</text>
+<view class="sendmessage">
+  <input class="chat-input" type="emoji" bindinput="bindChange" confirm-type="done" value='{{input}}' placeholder="" />
+  <button class="btn" type="primary" plain="true" bindtap='send'>发送</button>
+  <input style='display:none' type="" bindinput="bindChange" confirm-type="done" placeholder="" />
+
+</view>

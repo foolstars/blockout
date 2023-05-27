@@ -1,0 +1,32 @@
+/* pages/message/index.wxss */
+.chat {
+  margin-bottom: 16rpx;
+}
+
+.thread {
+  background: radial-gradient(at 0% 0%, rgb(199, 115, 115) 20%, rgb(236, 144, 144) 100%);
+  width: 700rpx !important;
+  margin: 15rpx 25rpx 15rpx 15rpx;
+  border-radius: 5rpx 5rpx 5rpx 5rpx;
+  float: left;
+  clear: left;
+  flex-direction: row;
+  display: flex !important;
+  box-shadow: 3rpx 3rpx 12rpx 12rpx rgba(163, 45, 24, 0.1);
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  flex-wrap: wrap;
+}
+
+.profile {
+  background-color: rgba(250, 175, 250, 1);
+  width: 80rpx !important;
+  min-height: 75rpx !important;
+  position: relative;
+  background: radial-gradient(at 0% 0%, rgb(190, 115, 115) 1%, rgb(190, 100, 100) 100%);
+  margin: 0 30rpx 0 0;
+}
+
+.content {
+  background: radial-gradient(at 0% 0%, rgb(247, 228, 228) 1%, rgb(241, 193, 193) 100%);
+  width: 590rpx !important;
+}

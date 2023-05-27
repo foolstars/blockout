@@ -1,0 +1,6 @@
+<!--pages/me/subs/login/login.wxml-->
+<view class="login-wrapper">
+  <input type="text" name="id" class="inputid" placeholder="用户名" bindinput="inputid"></input>
+  <input type="text" name="pw" password="true" class="inputpw" placeholder="密码" bindinput="inputpw"></input>
+  <button type="submit" class="login-button" bindtap="login" style="font-size:24rpx;">注册</button>
+</view>

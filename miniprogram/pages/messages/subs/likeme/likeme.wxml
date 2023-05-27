@@ -1,0 +1,18 @@
+<view class="mine-wrapper">
+
+
+<view class="list-wrapper">
+    <view class="alllists">
+        <block wx:for="{{menuitems}}" wx:key="menu_for">
+            <navigator class="lists" wx:for-index="index" data-index='{{index}}' bindtap="empty">
+                {{item.name}}赞了您{{item.num}}次
+            </navigator>
+            <!-- 分割线 -->
+            <view class="divLine"></view>
+        </block>
+    </view>
+</view>
+
+</view>
+
+<text>点击查看详情</text>

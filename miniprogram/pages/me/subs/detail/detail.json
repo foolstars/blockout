@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "thread":"/components/thread/thread"
+  },
+  "navigationBarTitleText": "详情"
+}

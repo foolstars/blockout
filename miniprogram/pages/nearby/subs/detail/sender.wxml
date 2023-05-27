@@ -1,0 +1,11 @@
+<view class="inputbox">
+  <input type="text" name="input" class="title" placeholder="标题" bindinput="inputtitle"></input>
+  <textarea maxlength="4600" name="textarea" class="content" placeholder="内容" bindinput="inputcontent"></textarea>
+  <checkbox-group bindchange="agree1" style="position:absolute;margin:720rpx 700rpx 0 0;">
+    <checkbox value="{{checkbox1items[0].namea}}" style="width:100rpx;height:50rpx;position:absolute;font-size:22rpx;white-space:nowrap;" checked="{{checkbox1items[0].value}}">{{checkbox1items[0].text}}</checkbox>
+  </checkbox-group>
+  <!--checkbox-group bindchange="agree2" style="position:absolute;margin:720rpx 700rpx 0 0;">
+    <checkbox value="{{checkbox2items[0].namea}}" style="margin-top:60rpx;width:100rpx;height:50rpx;position:absolute;font-size:22rpx;white-space:nowrap;" checked="{{checkbox2items[0].value}}">{{checkbox2items[0].text}}</checkbox>
+  </checkbox-group-->
+  <button class="submit" bindtap="submit" disabled="{{!checkbox1items[0].value}}" style="font-size:40rpx;width:160rpx;height:70rpx;position:absolute;margin:745rpx -540rpx 0 0;">提交</button>
+</view>

@@ -1,0 +1,137 @@
+/* pages/me.wxss */
+/*page {
+  background-color:rgba(222,222,222,1);
+}*/
+
+.me-topbar {
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgba(125, 111, 125, 1);
+  background: linear-gradient(0deg, rgba(207, 196, 207, 1) 27%, rgba(255, 255, 255, 1) 100%);
+  /*background: radial-gradient(at 100% 67%, rgb(190, 115, 115) 13%, rgb(190, 115, 115) 100%);*/
+}
+
+.me-userinfo-avatar {
+  position: absolute;
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.me-logger-userinfo-display {
+  /*background: radial-gradient(at 100% 67%, rgba(166, 166, 166, 1) 13%, rgba(255, 255, 255, 1) 100%);*/
+  background: radial-gradient(at 100% 67%, rgb(190, 115, 115) 13%, rgb(190, 115, 115) 100%);
+  display: block;
+  min-height: 168rpx;
+  box-shadow: 1rpx 1rpx 1rpx 0 rgba(64, 64, 64, 0.2);
+  background-color: rgba(179, 172, 179, 1);
+  margin: 24rpx 24rpx 0 24rpx;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+}
+
+.me-userinfo-nickname {
+  position: absolute;
+  left: 188rpx;
+  margin-top: 50rpx;
+}
+
+/*.me-logger-userinfo-display {
+
+}*/
+
+.me-function-list {
+  margin-top: 24rpx;
+  margin-bottom: 24rpx;
+}
+
+.me-function-myplans {
+  position: absolute;
+  display: flex;
+  height: 126rpx;
+  width: 686rpx;
+  box-shadow: 1rpx 1rpx 1rpx 0 rgba(64, 64, 64, 0.2);
+  /*background-color: rgb(202, 195, 202);*/
+  /*background: radial-gradient(at 100% 67%, rgba(166, 166, 166, 1) 13%, rgba(255, 255, 255, 1) 100%);*/
+  margin: 24rpx 32rpx 24rpx 32rpx;
+  /*border-radius: 20rpx 20rpx 20rpx 20rpx;*/
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: rgba(166, 166, 166, 1) solid 1rpx !important;
+  /*border-top: rgba(0, 0, 0, 1) solid 1rpx !important;*/
+}
+
+.me-function-profileupdate {
+  position: absolute;
+  display: flex;
+  height: 126rpx;
+  width: 686rpx;
+  box-shadow: 1rpx 1rpx 1rpx 0 rgba(64, 64, 64, 0.2);
+  /*background-color: rgb(202, 195, 202);*/
+  /*background: radial-gradient(at 100% 67%, rgba(166, 166, 166, 1) 13%, rgba(255, 255, 255, 1) 100%);*/
+  margin: 174rpx 32rpx 24rpx 32rpx;
+  /*border-radius: 20rpx 20rpx 20rpx 20rpx;*/
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: rgba(166, 166, 166, 1) solid 1rpx !important;
+  /*border-top: rgba(0, 0, 0, 1) solid 1rpx !important;*/
+}
+
+.me-function-myfavourite {
+  position: absolute;
+  display: flex;
+  height: 126rpx;
+  width: 686rpx;
+  box-shadow: 1rpx 1rpx 1rpx 0 rgba(64, 64, 64, 0.2);
+  /*background-color: rgb(202, 195, 202);*/
+  /*background: radial-gradient(at 100% 67%, rgba(166, 166, 166, 1) 13%, rgba(255, 255, 255, 1) 100%);*/
+  margin: 174rpx 32rpx 24rpx 32rpx;
+  /*border-radius: 20rpx 20rpx 20rpx 20rpx;*/
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: rgba(166, 166, 166, 1) solid 1rpx !important;
+  /*border-top: rgba(0, 0, 0, 1) solid 1rpx !important;*/
+}
+
+.me-logger-id {
+  position: absolute;
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  font-size: 60rpx;
+}
+
+.me-logger-uid {
+  position: absolute;
+  margin: 85rpx 10rpx 10rpx 10rpx;
+  font-size: 20rpx;
+}
+
+.me-admin {
+  position: absolute;
+  display: flex;
+  height: 126rpx;
+  width: 686rpx;
+  box-shadow: 1rpx 1rpx 1rpx 0 rgba(64, 64, 64, 0.2);
+  /*background-color: rgb(202, 195, 202);*/
+  /*background: radial-gradient(at 100% 67%, rgba(166, 166, 166, 1) 13%, rgba(255, 255, 255, 1) 100%);*/
+  margin: 324rpx 32rpx 24rpx 32rpx;
+  /*border-radius: 20rpx 20rpx 20rpx 20rpx;*/
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: rgba(166, 166, 166, 1) solid 1rpx !important;
+  /*border-top: rgba(0, 0, 0, 1) solid 1rpx !important;*/
+}
+
+.reset {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+}

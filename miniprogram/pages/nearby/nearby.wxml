@@ -1,0 +1,24 @@
+<!--pages/nearby/nearby.wxml-->
+<view class="nearby-wrapper">
+  <block wx:if="{{defaultPage}}">
+    <view class="nearby-list-container">
+      <menu-group menus="{{menus}}" icon-type="icon2">
+      </menu-group>
+      <view class="nearby-peoples" wx:for="{{threads}}" wx:key="*this">
+        <menu-item icon-type="icon2" item="{{item}}">
+        </menu-item>
+      </view>
+    </view>
+  </block>
+  <block wx:elif="{{!defaultPage}}">
+    <view class="map_container">
+      <map class="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="12" markers="{{markers}}" bindmarkertap="makertap" show-location="true"></map>
+    </view>
+    <view class="map_text" wx:if="{{false}}">
+      <text class="h1">{{textData.name}}</text>
+      <text>{{textData.desc}}</text>
+    </view>
+  </block>
+  <button bindtap="nearbysearch" class="toggler" style="width:192rpx;height:192rpx;bottom:80rpx;left:80rpx;">附近</button>
+  <button bindtap="toggleDisplay" class="toggler" style="width:192rpx;height:192rpx;bottom:80rpx;right:80rpx;">切换</button>
+</view>

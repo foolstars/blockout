@@ -1,0 +1,10 @@
+<!--pages/me/subs/myfavourite/myfavourite.wxml-->
+<view>
+  <image src="../../../../images/fzp.jpg" class="slide-image" style="width:750rpx;"></image>
+  <view class="thread" wx:for="{{threads}}" wx:key="*this">
+    <menu-item icon-type="icon2" item="{{item}}"></menu-item>
+    <!--button bindtap="unfavour" id="{{item.pid}}" style="position:absolute;margin-left:620rpx;margin-top:-85rpx;height:75rpx;width:50rpx;background-color:cornsilk;font-size:20rpx;white-space:nowrap;justify-content:center;display:flex;vertical-align:middle;align-self:center;">
+      <text style="position:absolute;margin-top:8rpx;">取消收藏</text>
+    </button-->
+  </view>
+</view>

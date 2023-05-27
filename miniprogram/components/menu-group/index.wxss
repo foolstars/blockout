@@ -1,0 +1,8 @@
+/* components/menu-group/index.wxss */
+.menu-container {
+  border-radius: 20rpx;
+  height: 100%;
+  background-color: #fff;
+  padding: 25rpx 0;
+  margin-top: 20rpx;
+}

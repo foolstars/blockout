@@ -1,0 +1,45 @@
+/* pages/me/subs/sender/sending.wxss */
+.inputbox {
+  background: radial-gradient(at 0% 0%, rgba(224, 224, 224, 1) 1%, rgba(255, 255, 255, 1) 100%);
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  height: 850rpx !important;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  display: flex !important;
+}
+
+.title {
+  position: absolute;
+  width: 700rpx !important;
+  height: 60rpx !important;
+  margin: 15rpx 15rpx 0 15rpx;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.2);
+  border-radius: 5rpx 5rpx 5rpx 5rpx;
+  font-size: 32rpx;
+  color: rgba(20, 20, 20, 1);
+  letter-spacing: 1rpx;
+}
+
+.content {
+  overflow-y: scroll;
+  position: absolute;
+  margin: 90rpx 0 0 0;
+  width: 700rpx !important;
+  height: 610rpx !important;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.2);
+  border-radius: 5rpx 5rpx 5rpx 5rpx;
+  cursor: text;
+  line-height: 18rpx;
+  font-size: 28rpx;
+  color: rgba(74, 74, 74, 1);
+}
+
+.submit {
+  box-shadow: 5rpx 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.2);
+  border-radius: 5rpx 5rpx 5rpx 5rpx;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}

@@ -1,0 +1,30 @@
+<!--pages/me.wxml-->
+<view class="me-wrapper">
+  <!--view class="me-topbar">我</view-->
+  <view class="me-logger">
+    <view class="me-logger-userinfo-display">
+      <view wx:if="{{!online}}">
+        <button class="me-register-3rdparty" bindtap="register" style="margin-top:10rpx;margin-bottom:10rpx;width:160rpx;height:96rpx;align-items:center;display:flex;justify-content:center;white-space:nowrap;">注册</button>
+        <button class="me-logger-3rdparty" bindtap="login" style="margin-top:10rpx;margin-bottom:10rpx;width:160rpx;height:96rpx;align-items:center;display:flex;justify-content:center;white-space:nowrap;">登录</button>
+      </view>
+      <view wx:if="{{online}}">
+        <text class="me-logger-id">{{id}}</text>
+        <text class="me-logger-uid">uid:{{uid}}</text>
+        <button class="reset" bindtap="reset" style="height:100rpx;width:140rpx;white-space:nowrap;margin:30rpx 0rpx 0rpx 500rpx;">登出</button>
+      </view>
+    </view>
+  </view>
+  <view class="me-function-list" wx:if="{{online}}">
+    <view class="me-function-myplans" style="font-size:36rpx;" bindtap="myplans">我的方案
+    </view>
+    <!--view class="me-function-profileupdate" style="font-size:36rpx;" bindtap="profileupdate">资料更新
+    </view-->
+    <view class="me-function-myfavourite" style="font-size:36rpx;" bindtap="myfavourite">我的收藏
+    </view>
+    <view wx:if="{{uid==1}}" class="me-admin" style="font-size:36rpx;" bindtap="manage">审核
+    </view>
+  </view>
+  <!--view class="box"></view-->
+
+
+</view>
